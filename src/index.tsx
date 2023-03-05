@@ -1,13 +1,13 @@
 import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 import {BrowserRouter} from "react-router-dom";
-import App from './App';
-import ThemesProvider from "./theme/ThemeProvider";
+import App from 'app/App';
+import { ThemeProvider } from "app/providers/ThemeProvider";
 
 root.render (
     <BrowserRouter>
-        <ThemesProvider>
+        <ThemeProvider>
             <App />
-        </ThemesProvider>
+        </ThemeProvider>
     </BrowserRouter>
 )
