@@ -2,15 +2,18 @@ import './styles/index.scss';
 import {useTheme} from "app/providers/ThemeProvider";
 import {AppRouter} from "app/providers/router";
 import {Navbar} from "widgets/Navbar";
+import {Sidebar} from "widgets/Sidebar";
 
 const App = () => {
-    const {theme, toggleTheme} = useTheme();
+    const {theme} = useTheme();
     
     return (
       <div className={`app ${theme}`}>
-        <Navbar />
-        <button onClick={toggleTheme}>Toggle</button>
-          <AppRouter />
+          <Navbar />
+          <div className={'page-content'}>
+              <Sidebar />
+              <AppRouter />
+          </div>
       </div>
      
     )
