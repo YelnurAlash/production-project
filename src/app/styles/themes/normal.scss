@@ -1,6 +1,9 @@
-﻿.app.normal {
+﻿:root {
   --bg-color: white;
+  --inverted-bg-color: blue;
 
-  --primary-color: blue;
+  --primary-color: red;
   --secondary-color: #099ae8;
+  --inverted-primary-color: white;
+  --inverted-secondary-color: #13cd13;
 }
