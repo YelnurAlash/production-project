@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, {Suspense, useEffect} from 'react';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
@@ -7,6 +7,10 @@ import './styles/index.scss';
 
 const App = () => {
 	const { theme } = useTheme();
+	
+	useEffect(() => {
+		throw new Error;
+	}, []);
 
 	return (
 		<div className={`app ${theme}`}>
